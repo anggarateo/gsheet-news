@@ -27,8 +27,7 @@ defineProps<{
 
 <style scoped>
 section {
-  display: flex;
-  align-items: center;
+  display: block;
   padding: 20px;
   border: 2px solid gray;
   border-radius: 20px;
@@ -37,6 +36,13 @@ section {
   
   &:hover {
     background: #f5f5f5;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    display: flex;
+    align-items: center;
   }
 }
 
